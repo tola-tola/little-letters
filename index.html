@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf7f2">
+  <meta name="description" content="مساحة صغيرة للرسائل التي كُتبت بمحبة.">
+  <title>إليكَ — رسائل صغيرة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="wordmark" href="./">إليكَ<span>✳</span></a>
+    </header>
+
+    <section id="loginView" class="login-view">
+      <p class="eyebrow">مساحة صغيرة لنا وحدنا</p>
+      <h1>تركتُ لكَ هنا<br><em>شيئًا من قلبي.</em></h1>
+      <p class="intro">رسائل صغيرة، كُتبت بمحبة، وانتظرت لحظتها لتصل إليك.</p>
+      <div class="login-form">
+        <button id="enterButton" class="primary-button" type="button">ادخل إلى صندوق الرسائل <span>←</span></button>
+      </div>
+      <div class="tiny-flower" aria-hidden="true">✳</div>
+    </section>
+
+    <section id="mailboxView" class="hidden">
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">ركننا الصغير</p>
+          <h1 id="mailboxTitle">صندوق الرسائل</h1>
+          <p class="intro" id="mailboxSubtitle">لكل كلمة وقتها، ولكل رسالة حكاية.</p>
+        </div>
+      </div>
+      <div id="lettersGrid" class="letters-grid"></div>
+      <div id="emptyState" class="empty-state hidden">
+        <div class="empty-envelope">✉</div>
+        <h2>لم تصل رسائل بعد</h2>
+        <p id="emptyMessage">لكن للكلمات موعدًا، وللرسائل طريقًا.</p>
+      </div>
+    </section>
+
+    <section id="readingView" class="reading-view hidden">
+      <button id="backButton" class="back-button">→ العودة إلى صندوق الرسائل</button>
+      <div class="reading-paper">
+        <p class="eyebrow">كُتبت إليك بمحبة</p>
+        <h1 id="readingTitle"></h1>
+        <p id="readingDate" class="reading-date"></p>
+        <div class="paper-rule"></div>
+        <p id="readingContent" class="letter-content"></p>
+        <p class="signature">بكلّ الحب، دائمًا <span>♡</span></p>
+      </div>
+    </section>
+
+    <footer>كلمات صغيرة، ومحبّة لا تُقال كلّها <span>♡</span></footer>
+  </main>
+  <script src="js/letters.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
